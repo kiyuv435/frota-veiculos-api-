@@ -9,6 +9,6 @@ veiculosRouter.get("/", async (req, res) =>{
 });
 
 veiculosRouter.post("/", async (req, res) => {
-    const veiculos = await veiculosService.create(req.body);
-    return res.status(201).json(veiculos);
+    const veiculo = await veiculosService.create(req.body);
+    return res.status(201).json(veiculo);
 });
