@@ -6,6 +6,7 @@ export const veiculosRouter = Router()
 veiculosRouter.get("/", async (req, res) =>{
     const veiculos = await veiculosService.getAll();
     return res.json(veiculos);
+
 });
 
 veiculosRouter.post("/", async (req, res) => {
